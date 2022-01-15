@@ -1,1 +1,25 @@
-<p>add works!</p>
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+        <label class="spacing" for="title">Title</label>
+        <input type="text" class="form-control" id="title" required [(ngModel)]="tutorial.title" name="title"/>
+      </div>
+
+      <div class="form-group spacing">
+        <label class="spacing" for="description">Description</label>
+        <input class="form-control spacing" id="description" required [(ngModel)]="tutorial.description"
+               name="description"/>
+      </div>
+
+      <div class="butt-grp spacing">
+        <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>Tutorial was submitted successfully!</h4>
+      <button (click)="newTutorial()">Add</button>
+    </div>
+  </div>
+</div>

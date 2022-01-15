@@ -1,0 +1,42 @@
+.navbar {
+  background: #2d2c2c;;
+  display: inline-flex;
+  width: 100%;
+}
+
+.navbar-brand {
+  height: 60px;
+}
+
+.navbar-nav {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  font-size: 24pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav-link {
+  color: #F0F8FFFF;
+  text-shadow: gray;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #F0F8FFFF;
+  text-shadow: gray;
+  text-decoration: underline;
+}

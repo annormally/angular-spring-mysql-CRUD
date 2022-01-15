@@ -1,0 +1,102 @@
+h4 {
+  text-align: center;
+}
+
+.edit-form {
+  border: 2px solid;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #808080FF;
+}
+
+.form-to-edit {
+  margin: 10px;
+  text-align: center;
+}
+
+.form-group, input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn-form {
+  text-align: center;
+}
+
+.badge {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+}
+
+.badge:hover {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #e0a921;
+  border-radius: 10px;
+}
+
+.badge-unPublish {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.badge-unPublish:hover {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #ff6203;
+  text-decoration: underline;
+}
+
+.badge-publish {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.badge-publish:hover {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #e0a921;
+  text-decoration: underline;
+}
+
+.badge-danger {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.badge-danger:hover {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #FF0000FF;
+  text-decoration: underline;
+}
+
+.badge-success {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.badge-success:hover {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #6ec2f3;
+  text-decoration: underline;
+}
+
+

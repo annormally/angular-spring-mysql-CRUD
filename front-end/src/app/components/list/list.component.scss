@@ -1,0 +1,57 @@
+input {
+  max-width: 400px;
+}
+
+h4 {
+  text-align: center;
+}
+
+a {
+  color: #000;
+}
+
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #808080FF;
+}
+
+
+.input-group {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-control {
+  text-align: center;
+  margin: 2px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.list-group {
+  justify-content: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.badge {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.badge:hover {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: #12d912;
+  text-decoration: underline;
+}
