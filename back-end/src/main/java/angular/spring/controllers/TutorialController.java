@@ -2,7 +2,6 @@ package angular.spring.controllers;
 
 import angular.spring.entities.TutorialEntity;
 import angular.spring.repositories.TutorialRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,18 +15,22 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class TutorialController {
 
-    @Autowired
+    final
     TutorialRepository tutorialRepository;
+
+    public TutorialController(TutorialRepository tutorialRepository) {
+        this.tutorialRepository = tutorialRepository;
+    }
 
     @GetMapping("/tutorials")
     public ResponseEntity<List<TutorialEntity>> getAllTutorials(@RequestParam(required = false) String title) {
         try {
-            List<TutorialEntity> tutorials = new ArrayList<TutorialEntity>();
+            List<TutorialEntity> tutorials = new ArrayList<>();
 
             if (title == null) {
-                tutorialRepository.findAll().forEach(tutorials::add);
+                tutorials.addAll(tutorialRepository.findAll());
             } else {
-                tutorialRepository.findByTitleContaining(title).forEach(tutorials::add);
+                tutorials.addAll(tutorialRepository.findByTitleContaining(title));
             }
 
             if (tutorials.isEmpty()) {
@@ -44,11 +47,7 @@ public class TutorialController {
     public ResponseEntity<TutorialEntity> getTutorialById(@PathVariable("id") long id) {
         Optional<TutorialEntity> tutorialData = tutorialRepository.findById(id);
 
-        if (tutorialData.isPresent()) {
-            return new ResponseEntity<>(tutorialData.get(), HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+        return tutorialData.map(tutorialEntity -> new ResponseEntity<>(tutorialEntity, HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @PostMapping("/tutorials")
