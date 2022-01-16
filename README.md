@@ -4,6 +4,9 @@
 ![Spring](https://img.shields.io/badge/-Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
+## YouTube
+![YouTube](https://img.shields.io/badge/-YouTube-DD0031?style=flat-square&logo=YouTube&logoColor=white) ::: https://youtu.be/9f6oLIqrP1E
+
 ## Back-End
 
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
@@ -24,6 +27,7 @@
 * REPOSITORIES  
   Is used for create connection between entity and database.
 ## Front-End
+* Open in Terminal front-end and introduce the next line command ng serve --port 8081 to run.
 ![front_end_tutorial](front-end/src/assets/forReadMe/front-end-tutorial-page.png)
 ![front_end_add](front-end/src/assets/forReadMe/front-end-add-page.png)
 ![front_end_edit](front-end/src/assets/forReadMe/front-end-edit-page.png)
