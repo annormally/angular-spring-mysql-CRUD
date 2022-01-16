@@ -23,6 +23,8 @@ public class TutorialEntity {
     }
 
     public TutorialEntity(String title, String description, boolean b) {
+        this.title = title;
+        this.description = description;
     }
 
     public long getId() {
@@ -55,5 +57,15 @@ public class TutorialEntity {
 
     public void setPublished(boolean published) {
         this.published = published;
+    }
+
+    @Override
+    public String toString() {
+        return "TutorialEntity{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", published=" + published +
+                '}';
     }
 }
